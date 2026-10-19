@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陳綵婕｜作品集</title>
+<meta name="description" content="陳綵婕的作品集：一個想知道跨領域人可以去哪的女孩。國立中山大學 人文暨科技跨領域學士學位學程／企業管理學系（雙主修）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffbfa;
+  --ink:#4a3226;
+  --ink-soft:#7a6a60;
+  --lime:#d3fa80;
+  --lime-line:#c6e88a;
+  --sage:#a9bd8b;
+  --sage-bar:#aebf8e;
+  --orange:#d4501e;
+  --pad:clamp(20px,5.6vw,77px);
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1366px;margin:0 auto;padding-inline:var(--pad)}
+
+/* ---------- slim quick-nav (appears after scrolling) ---------- */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,251,250,.94);backdrop-filter:blur(6px);
+  border-bottom:3px solid var(--sage-bar);transform:translateY(-110%);transition:transform .35s ease}
+.topbar.show{transform:none}
+.topbar ul{list-style:none;margin:0 auto;padding:0;max-width:1366px;display:flex;gap:6px;align-items:stretch;overflow-x:auto}
+.topbar li{flex:0 0 auto}
+.topbar a{display:block;padding:12px clamp(14px,2.4vw,32px);text-decoration:none;font-weight:700;font-size:clamp(14px,1.5vw,18px);letter-spacing:.08em;white-space:nowrap;transition:background .2s,color .2s}
+.topbar a:hover{background:var(--lime)}
+.topbar a.active{background:var(--orange);color:#fff}
+.topbar .brand{margin-right:auto;font-weight:900;padding:12px var(--pad)}
+.topbar li.sp{margin-left:auto}
+
+/* ---------- hero ---------- */
+.hero{padding-top:92px;padding-bottom:20px}
+.hero-grid{display:grid;grid-template-columns:minmax(260px,485px) 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.portrait{position:relative;width:min(448px,100%);margin-bottom:30px}
+.portrait::before{content:"";position:absolute;left:58px;top:60px;right:-37px;bottom:-30px;background:var(--lime)}
+.portrait img{position:relative;width:100%;aspect-ratio:448/553;object-fit:cover;object-position:50% 35%}
+.name-block{display:flex;gap:clamp(18px,3vw,48px);align-items:flex-end;padding-top:100px}
+.name{margin:0;font-weight:900;font-size:clamp(56px,6.2vw,86px);line-height:1.12;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.05em}
+.name-text{padding-bottom:6px}
+.tagline{font-size:clamp(18px,2.2vw,30px);font-weight:700;margin:0 0 24px;line-height:1.5}
+.school{font-size:clamp(15px,1.5vw,20px);margin:0;line-height:1.85;color:var(--ink)}
+.scroll-cue{display:flex;justify-content:flex-end;margin:18px 0 0}
+.scroll-cue a{text-decoration:none;font-size:clamp(14px,1.3vw,18px);letter-spacing:.08em;display:inline-flex;gap:8px;align-items:center}
+.scroll-cue a span{display:inline-block;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(5px)}}
+
+.intro{margin-top:70px;display:flex;align-items:flex-end;gap:clamp(12px,1.8vw,22px);max-width:1212px}
+.intro .avatar{flex:0 0 auto;width:clamp(52px,6vw,78px);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 22%;border:4px solid var(--lime);background:#fff}
+.bubble{position:relative;background:#eaf9bd;padding:clamp(16px,2.2vw,28px) clamp(18px,2.8vw,38px);border-radius:28px 28px 28px 6px;box-shadow:6px 6px 0 var(--lime)}
+.bubble::before{content:"";position:absolute;left:-13px;bottom:16px;border-right:16px solid #eaf9bd;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.intro p{margin:0;font-size:clamp(17px,2vw,28px);font-weight:700;line-height:1.6}
+
+/* ---------- step nav ---------- */
+.steps{margin-top:64px;position:relative;padding:6px 0 10px}
+.steps::before{content:"";position:absolute;left:0;right:30px;top:46px;height:10px;background:var(--sage-bar)}
+.steps::after{content:"";position:absolute;right:0;top:34px;border-left:34px solid var(--sage-bar);border-top:17px solid transparent;border-bottom:17px solid transparent}
+.steps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,2vw,28px);position:relative;width:calc(100% - 50px)}
+.st{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;gap:10px;padding-bottom:6px}
+.st .num{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:26px;letter-spacing:.04em;border:6px solid var(--bg);transition:transform .3s,box-shadow .3s}
+.st .ico{width:44px;height:44px;margin-top:6px}
+.st strong{font-size:clamp(18px,2.4vw,32px);letter-spacing:.1em;line-height:1.25}
+.st em{font-style:normal;font-size:clamp(12px,1.25vw,16px);color:var(--ink-soft);letter-spacing:.05em;line-height:1.5;max-width:16em;text-wrap:balance}
+.st:hover .num{transform:translateY(-6px) scale(1.06);box-shadow:0 10px 0 -2px rgba(74,50,38,.15)}
+.st1 .num{background:var(--lime);color:var(--ink)} .st1 .ico{color:#7f9a2e}
+.st2 .num{background:var(--orange);color:#fff} .st2 .ico{color:var(--orange)}
+.st3 .num{background:var(--sage);color:#fff} .st3 .ico{color:#7d9460}
+.st4 .num{background:var(--ink);color:#fff} .st4 .ico{color:var(--ink)}
+
+/* ---------- section: projects ---------- */
+.band{background:var(--lime)}
+.band-1{margin-top:60px;height:clamp(110px,13.5vw,184px);display:flex;align-items:center}
+.band-1 p{margin:0;font-weight:700;font-size:clamp(16px,1.9vw,26px)}
+.big-claim{text-align:center;font-weight:700;font-size:clamp(26px,4vw,56px);margin:0;padding:clamp(34px,4.6vw,64px) 0 clamp(12px,1.4vw,18px);line-height:1.25}
+.big-claim b{font-weight:400;font-size:2.1em;color:var(--orange);vertical-align:-.16em;margin-right:.08em;line-height:0}
+.big-claim .ci{font-size:.74em;color:var(--orange);margin-right:.3em}
+.claim-sub{margin:0;padding:0 var(--pad) clamp(34px,4.6vw,64px);text-align:center;font-weight:700;font-size:clamp(16px,1.9vw,26px);color:#aa9e96;letter-spacing:.06em}
+.band-2{height:66px}
+.strip{display:flex;flex-wrap:wrap;gap:clamp(12px,1.8vw,25px);justify-content:center;align-items:flex-start;padding:26px var(--pad) 0}
+.strip img{height:clamp(120px,13vw,180px);width:auto;object-fit:cover}
+.wall{columns:4;column-gap:clamp(8px,1.1vw,14px);max-width:1366px;margin:0 auto;padding:30px var(--pad) 8px}
+.wall.masonry{columns:auto;display:flex;gap:clamp(8px,1.1vw,14px)}
+.mcol{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:clamp(8px,1.1vw,14px)}
+.wall.masonry img{margin:0}
+.wall img{width:100%;height:auto;margin:0 0 clamp(8px,1.1vw,14px);break-inside:avoid;cursor:zoom-in;transition:transform .3s,box-shadow .3s,filter .3s;background:#eee}
+.wall img:hover{transform:scale(1.03);box-shadow:0 10px 26px rgba(74,50,38,.28);filter:brightness(1.04);position:relative;z-index:2}
+@media (max-width:900px){.wall{columns:3}}
+@media (max-width:560px){.wall{columns:2}}
+.line-end{border:0;border-top:4px solid var(--lime-line);margin:0}
+
+.project{padding:60px 0 44px;border-bottom:4px solid var(--lime-line)}
+.project:last-of-type{border-bottom:0}
+.meta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.tag{background:var(--sage);color:#fff;padding:6px 12px;font-weight:700;font-size:clamp(15px,1.7vw,24px);letter-spacing:.04em;line-height:1.4}
+.cta{margin-left:auto;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:clamp(15px,1.8vw,25px);padding:8px 20px;letter-spacing:.06em;transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--sage-bar)}
+.date{margin:14px 0 0;font-size:clamp(14px,1.4vw,19px);color:var(--ink);letter-spacing:.04em}
+.ptitle{margin:0 0 16px;font-weight:700;font-size:clamp(24px,3.4vw,46px);line-height:1.3;letter-spacing:.04em}
+.lines p{margin:.2em 0;font-size:clamp(16px,2.1vw,29px);line-height:1.55;padding-left:2.1em;letter-spacing:.03em}
+.lines p.ar{padding-left:0;display:flex;gap:.55em}
+.lines p.ar::before{content:"\27F6";flex:0 0 1.55em;font-weight:400}
+.hl{color:var(--orange)}
+.shots{display:flex;flex-wrap:wrap;gap:22px clamp(18px,3vw,40px);margin-top:22px;align-items:flex-start}
+.shot{margin:0}
+.shot img{height:clamp(150px,17vw,240px);width:auto;max-width:100%;object-fit:contain;border:1px solid #d9d2cf;cursor:zoom-in;transition:transform .25s,box-shadow .25s;background:#fff}
+.shot img:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(74,50,38,.18)}
+.shot.tall img{width:clamp(110px,12.5vw,172px);object-fit:cover;object-position:top}
+.shot.wide img{height:clamp(150px,22vw,300px)}
+.shots.egm{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:22px clamp(18px,3vw,40px)}
+.shots.egm .shot img{width:100%;height:auto}
+.psub{margin:-6px 0 16px;color:var(--ink-soft);font-size:clamp(15px,1.7vw,22px);letter-spacing:.06em}
+.role{margin:20px 0 6px;padding:14px clamp(14px,2vw,22px);border-left:6px solid var(--lime);background:rgba(211,250,128,.2)}
+.role-h{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-weight:700;font-size:clamp(16px,1.8vw,24px)}
+.role-h .chip{background:var(--ink);color:#fff;padding:1px 10px;font-size:.72em;letter-spacing:.12em}
+.role ul{margin:8px 0 0;padding-left:1.2em;font-size:clamp(14px,1.45vw,19px);line-height:1.8}
+.role ul li{margin:2px 0}
+.role .result{margin:10px 0 0;font-size:clamp(14px,1.45vw,19px);line-height:1.8}
+.role .result b{color:var(--orange);margin-right:.4em;letter-spacing:.08em}
+.shots.stack{display:flex;flex-direction:column;flex-wrap:nowrap;gap:22px}
+.srow{display:flex;gap:clamp(10px,1.6vw,24px);width:100%}
+.srow .shot{flex:var(--ar) 1 0;min-width:0}
+.srow .shot img{width:100%;height:auto}
+.srow .shot.crop img{aspect-ratio:var(--ar);object-fit:cover;object-position:top}
+.shots.row{flex-wrap:nowrap;gap:clamp(10px,1.6vw,24px)}
+.shots.row .shot{flex:var(--ar) 1 0;min-width:0}
+.shots.row .shot img{width:100%;height:auto}
+@media (max-width:700px){.srow{flex-wrap:wrap}.srow .shot{flex:1 1 44%}.shots.egm{grid-template-columns:1fr}.shots.row{flex-wrap:wrap}.shots.row .shot{flex:1 1 44%}}
+.shot figcaption{margin-top:8px;font-size:clamp(12px,1.25vw,17px);color:var(--ink-soft);letter-spacing:.03em;max-width:36em}
+
+/* ---------- ability ---------- */
+.ability{padding:60px 0 40px}
+.frame{border:12px solid var(--lime);background:var(--bg);padding:clamp(18px,3vw,36px);position:relative}
+.ab-grid{display:grid;grid-template-columns:1fr minmax(240px,360px) 1fr;grid-template-areas:
+  "title r1 r1" "left center right" "bl center br";gap:18px clamp(10px,1.6vw,24px);align-items:start}
+.ab-title{grid-area:title;margin:0;font-weight:700;font-size:clamp(24px,2.9vw,42px);color:var(--sage);letter-spacing:.06em;line-height:1.3;align-self:start;text-wrap:balance}
+.ab{cursor:pointer;padding:10px 12px;border-radius:2px;transition:background .25s,transform .25s}
+.ab h3{margin:0 0 6px;font-weight:700;font-size:clamp(22px,3vw,42px);letter-spacing:.04em;line-height:1.3}
+.ab ul{margin:0;padding-left:1.25em;font-size:clamp(14px,1.45vw,20px);line-height:1.7}
+.ab.on{background:rgba(211,250,128,.38);transform:translateY(-3px)}
+.ab.on h3{color:var(--orange)}
+.ab[data-k="0"]{grid-area:r1}
+.ab[data-k="1"]{grid-area:right}
+.ab[data-k="2"]{grid-area:br}
+.ab[data-k="3"]{grid-area:bl}
+.ab[data-k="4"]{grid-area:left}
+.radar{grid-area:center;align-self:center}
+.radar{position:relative}
+.radar-note{position:absolute;left:0;right:0;text-align:center;bottom:3%;font-size:12px;color:#b9aea6;letter-spacing:.12em}
+.radar svg{width:100%;height:auto;overflow:visible}
+.radar .outer{fill:none;stroke:#bdb5b0;stroke-width:1.3;stroke-dasharray:6 5}
+.radar .inner{fill:var(--orange);transition:all .4s ease}
+.radar .center-text{fill:#fff;font-weight:900;font-size:25px;font-family:var(--serif);letter-spacing:.08em;text-anchor:middle}
+.radar .dot{fill:#fff;stroke:var(--orange);stroke-width:3;r:5;transition:r .25s,fill .25s}
+.radar .dot.on{r:11;fill:var(--lime)}
+.radar .spoke{stroke:#d4c7c1;stroke-width:1;stroke-dasharray:3 4}
+
+/* ---------- aspiration (why TDRI / why me) ---------- */
+.goal{padding:70px 0 90px}
+.goal-title{text-align:center;margin:0 0 40px;font-weight:900;font-size:clamp(26px,3.6vw,50px);letter-spacing:.08em}
+.goal-lead{text-align:center;margin:0 0 40px;color:var(--ink-soft);font-size:clamp(14px,1.5vw,19px);letter-spacing:.05em}
+.goal-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(14px,2.4vw,34px);align-items:stretch}
+.gcard{padding:clamp(22px,2.8vw,38px);display:flex;flex-direction:column;gap:14px}
+.gcard.a{background:var(--lime)}
+.gcard.b{background:var(--bg);border:6px solid var(--lime)}
+.gcard h3{margin:0;font-weight:900;font-size:clamp(24px,3vw,40px);letter-spacing:.08em;line-height:1.2}
+.gcard h3 small{display:block;font-size:.42em;font-weight:600;letter-spacing:.1em;color:var(--orange);margin-top:6px}
+.gquote{margin:0;font-weight:700;font-size:clamp(17px,1.9vw,26px);line-height:1.6;padding-left:14px;border-left:6px solid var(--orange)}
+.gcard ol,.gcard ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.gcard li{font-size:clamp(14px,1.5vw,19px);line-height:1.7}
+.gcard.a li{display:grid;grid-template-columns:2.2em 1fr;gap:4px}
+.gcard.a li b{font-size:1.35em;color:var(--orange);line-height:1.2}
+.gcard.a li strong{display:block;letter-spacing:.06em}
+.gcard.b li{display:grid;grid-template-columns:7.5em 1fr;gap:4px 12px;align-items:baseline;padding-bottom:12px;border-bottom:2px dashed var(--lime-line)}
+.gcard.b li:last-child{border-bottom:0;padding-bottom:0}
+.gcard.b li strong{font-size:1.1em;letter-spacing:.06em}
+.gcard.b li span{display:block}
+.gcard.b li .links{grid-column:2;display:flex;flex-wrap:wrap;gap:6px 10px}
+.proof{display:inline-block;background:var(--sage);color:#fff;padding:2px 10px;text-decoration:none;font-size:.88em;font-weight:700;transition:background .2s,transform .2s}
+.proof:hover{background:var(--orange);transform:translateY(-2px)}
+.plus{width:clamp(36px,4.6vw,64px);aspect-ratio:1;position:relative;align-self:center}
+.plus::before,.plus::after{content:"";position:absolute;background:var(--orange)}
+.plus::before{left:0;right:0;top:36%;bottom:36%}
+.plus::after{top:0;bottom:0;left:36%;right:36%}
+.chat{margin-top:clamp(24px,3.4vw,44px);display:flex;flex-direction:column;gap:16px}
+.msg{display:flex;align-items:flex-end;gap:clamp(12px,1.8vw,22px)}
+.msg.q{justify-content:flex-end}
+.msg.a .bubble{max-width:min(940px,100%)}
+.chat .avatar{flex:0 0 auto;width:clamp(52px,6vw,78px);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 22%;border:4px solid var(--lime);background:#fff}
+.chat .avatar-sp{flex:0 0 auto;width:clamp(52px,6vw,78px)}
+.chat .who{flex:0 0 auto;width:clamp(52px,6vw,78px);aspect-ratio:1;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;border:4px solid var(--sage)}
+.chat .who svg{width:56%;height:56%}
+.chat p{margin:0;font-weight:700;font-size:clamp(16px,1.75vw,24px);line-height:1.7}
+.bubble.q{background:var(--ink);color:#fff;border-radius:28px 28px 6px 28px;box-shadow:-6px 6px 0 rgba(74,50,38,.22)}
+.bubble.q::before{left:auto;right:-13px;border-right:0;border-left:16px solid var(--ink)}
+.msg.cont .bubble{border-radius:28px 28px 28px 6px}
+.msg.cont .bubble::before{display:none}
+.gresult{margin-top:clamp(20px,3vw,34px);background:var(--ink);color:#fff;text-align:center;padding:clamp(20px,3vw,34px) clamp(18px,4vw,60px)}
+.gresult .eq{display:block;color:var(--lime);font-weight:700;letter-spacing:.2em;font-size:clamp(13px,1.3vw,17px);margin-bottom:8px}
+.gresult p{margin:0;font-weight:700;font-size:clamp(17px,2.1vw,28px);line-height:1.65}
+
+.gresult p{text-wrap:pretty}
+.todo{background:#fff3b0;color:var(--ink);outline:2px dashed var(--orange);padding:0 .3em;font-weight:600}
+@media (max-width:860px){.br-m{display:inline}.goal-grid{grid-template-columns:1fr}.plus{justify-self:center}.gcard.b li{grid-template-columns:1fr}.gcard.b li .links{grid-column:1}}
+.contact{background:var(--lime);padding:clamp(44px,7vw,84px) 0;margin-top:60px}
+.contact-inner{text-align:center}
+.contact h2{margin:0 0 10px;font-weight:900;font-size:clamp(28px,4vw,56px);letter-spacing:.08em}
+.contact .sub{margin:0 0 26px;font-size:clamp(15px,1.7vw,22px);font-weight:600}
+.mail-line{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 18px;margin-bottom:26px;background:var(--bg);padding:14px clamp(16px,3vw,32px);border:3px solid var(--ink)}
+.mail-line .lbl{font-weight:700;color:var(--orange);letter-spacing:.1em;font-size:clamp(14px,1.4vw,18px)}
+.mail-line a.addr{font-size:clamp(18px,2.8vw,36px);font-weight:700;text-decoration:none;letter-spacing:.02em;word-break:break-all}
+.mail-line a.addr:hover{color:var(--orange)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.btn{font:inherit;font-weight:700;font-size:clamp(16px,1.8vw,24px);letter-spacing:.08em;padding:12px 30px;border:3px solid var(--ink);cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;color:var(--ink);background:var(--bg)}
+.btn.primary{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.goal-end{text-align:center;margin-top:50px;color:var(--ink-soft);font-size:15px;letter-spacing:.1em}
+.goal-end a{color:var(--orange);font-weight:700;text-decoration:none;border-bottom:2px solid var(--orange)}
+
+/* ---------- reveal & lightbox ---------- */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(40,28,22,.88);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:90vh;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lb p{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;margin:0;font-size:15px;letter-spacing:.05em}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{width:min(380px,86%)}
+  .name-block{padding-top:10px}
+  .bignav ul{width:100%}
+  .ab-grid{grid-template-columns:1fr;grid-template-areas:"title" "center" "r1" "right" "br" "bl" "left"}
+  .radar{margin-top:10px;max-width:360px;justify-self:center}
+  .ab[data-k]{margin-top:0}
+  .goal-grid{grid-template-columns:1fr}
+  .plus{justify-self:center;margin:0}
+  .cta{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .scroll-cue a span{animation:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="topbar" id="topbar" aria-label="快速導覽">
+  <ul>
+    <li class="brand">陳綵婕</li>
+    <li><a href="#goal" data-nav="goal">為什麼是 TDRI</a></li>
+    <li><a href="#ability" data-nav="ability">能力分析</a></li>
+    <li><a href="#projects" data-nav="projects">專案介紹</a></li>
+    <li><a href="#contact" data-nav="contact">聯絡我</a></li>
+  </ul>
+</nav>
+
+<header class="hero wrap" id="top">
+  <div class="hero-grid">
+    <div class="portrait rv"><img src="images/profile.jpg" alt="陳綵婕"></div>
+    <div class="name-block rv">
+      <h1 class="name">陳綵婕</h1>
+      <div class="name-text">
+        <p class="tagline">一個想知道跨領域人可以去哪的女孩</p>
+        <p class="school">國立中山大學<br>人文暨科技跨領域學士學位學程<br>企業管理學系（雙主修）</p>
+      </div>
+    </div>
+  </div>
+  <p class="scroll-cue"><a href="#intro"><span>↓</span>為什麼我認為我適合 TDRI ？</a></p>
+
+  <div class="intro rv" id="intro">
+    <img class="avatar" src="images/profile.jpg" alt="陳綵婕">
+    <div class="bubble"><p>您好！我是綵婕，<br>很高興您能打開這則作品集，<br>我會依照以下順序分析為何我認為我適合參與這次的 TDRI 寒假實習，<br>讓您快速就可以了解我。</p></div>
+  </div>
+
+  <nav class="steps rv" aria-label="作品集導覽">
+    <ol>
+      <li><a class="st st1" href="#goal"><span class="num">01</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M31 17l-5 10-10 5 5-10z" fill="currentColor"/></svg><strong>為什麼是 TDRI</strong><em>我的志向、經驗與能力</em></a></li>
+      <li><a class="st st2" href="#ability"><span class="num">02</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><polygon points="24,5 43,19 36,41 12,41 5,19"/><polygon points="24,15 33,22 30,33 18,33 15,22" fill="currentColor" stroke="none"/></svg><strong>能力分析</strong><em>研究、溝通、設計、解決問題</em></a></li>
+      <li><a class="st st3" href="#projects"><span class="num">03</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="36" height="28" rx="2"/><path d="M6 20h36M16 12V7h16v5"/></svg><strong>專案介紹</strong><em>從企劃到落地的實戰經驗</em></a></li>
+      <li><a class="st st4" href="#contact"><span class="num">04</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="38" height="28" rx="2"/><path d="M5 13l19 15 19-15"/></svg><strong>聯絡我</strong><em>期待有機會與您聊聊</em></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+<section class="goal" id="goal">
+  <div class="wrap">
+    <h2 class="goal-title rv">為什麼是我？<br class="br-m">為什麼是台灣設計研究院（TDRI）？</h2>
+    <div class="goal-grid rv">
+      <div class="gcard a">
+        <h3>志向<small>為什麼想進 TDRI</small></h3>
+        <p class="gquote">我想知道，跨領域的人如何將設計運用到產業與社會問題上。</p>
+        <ol>
+          <li><b>1</b><div><strong>起點</strong>我身在一個用設計與科技來解決問題的跨領域科系，一直在探索時代到底需要什麼人才。</div></li>
+          <li><b>2</b><div><strong>發現</strong>隨著不斷地嘗試不同的方向並鍛鍊自我能力後，我發現「設計思維」是可以貫穿很多問題的核心能力。</div></li>
+          <li><b>3</b><div><strong>下一步</strong>除了在過去的經驗外，我更想向與我同年齡的設計團隊和企業學習，了解當設計思維進入更真實的產業與社會場域時，如何把問題轉化為可行的解方。</div></li>
+        </ol>
+      </div>
+      <div class="plus" aria-label="加上"></div>
+      <div class="gcard b">
+        <h3>經驗與能力<small>為什麼適合 TDRI</small></h3>
+        <p class="gquote">我做過從觀察、研究、設計到落地的完整流程，每一步都有成果可以證明。</p>
+        <ul>
+          <li><strong>落地執行</strong><span>從企劃、籌備到現場執行</span><div class="links"><a class="proof" href="#p-yanxia">鹽夏不夜埕 ↗</a><a class="proof" href="#p-dorm">宿舍自治委員會 ↗</a><a class="proof" href="#p-workshop">Notion 工作坊 ↗</a></div></li>
+          <li><strong>設計思維</strong><span>訪談、POV 分析、人物誌、How might we、便利貼、實地測試</span><div class="links"><a class="proof" href="#p-pallet">街頭玩童 木棧板遊具 ↗</a></div></li>
+          <li><strong>研究能力</strong><span>獨自撰寫計畫並通過補助</span><div class="links"><a class="proof" href="#p-egm">國科會研究計畫 ↗</a></div></li>
+          <li><strong>視覺設計</strong><span>自學 Illustrator 設計主視覺</span><div class="links"><a class="proof" href="#p-poster">畢業專題展海報 ↗</a></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chat rv">
+      <div class="msg q"><div class="bubble q"><p>為什麼是選擇台灣設計研究院？</p></div><span class="who" aria-hidden="true"><svg viewBox="0 0 48 48" fill="currentColor"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-15 16-15s16 6 16 15z"/></svg></span></div>
+      <div class="msg a"><img class="avatar" src="images/profile.jpg" alt="陳綵婕"><div class="bubble"><p>在探索的過程中，我參觀了金點設計展、線上新一代設計展等 TDRI 辦理的展覽，了解到設研院的願景，才發現原來已經有那麼多先驅者，將設計思維、設計能力運用到不同維度的問題。</p></div></div>
+      <div class="msg a cont"><span class="avatar-sp"></span><div class="bubble"><p>我想在新一代設計產學合作的計畫中發揮自己的能力，更想與他們一同為台灣的設計領域努力，向與我年紀相近的設計學生學習如何面對產業界的需求與變化。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="ability" id="ability">
+  <div class="wrap">
+    <div class="frame rv">
+      <div class="ab-grid">
+        <h2 class="ab-title">綵婕的<br>自我能力分析</h2>
+
+        <div class="ab" data-k="0" tabindex="0">
+          <h3>研究調查</h3>
+          <ul>
+            <li>常透過文獻蒐集&amp;質化訪談了解產業、使用者需求，對象包含：青年旅舍、高齡產業、科技業公司、2-10歲孩童、高雄在地居民和大學生、住宿生</li>
+            <li>擅長透過文獻蒐集、質性訪談、量化研究了解產業趨勢、社會問題，熟悉研究流程，包含問題定義、資料蒐集、分析整理與成果輸出</li>
+          </ul>
+        </div>
+        <div class="ab" data-k="1" tabindex="0">
+          <h3>溝通合作能力</h3>
+          <ul>
+            <li>跨領域 / 部門溝通合作能力</li>
+            <li>樂於溝通交流：擅長擔任田野調查之訪談員，包含架設訪談綱要、確保其訪談需要達到之目標等</li>
+          </ul>
+        </div>
+        <div class="ab" data-k="2" tabindex="0">
+          <h3>美感設計</h3>
+          <ul>
+            <li>曾擔任補習班美工、人科學程 114 級畢展海報設計 (Illustrator, Inkscape, Canva)</li>
+            <li>透過 Autodesk Inventor 繪製木工設計圖</li>
+          </ul>
+        </div>
+        <div class="ab" data-k="3" tabindex="0">
+          <h3>解決問題的能力</h3>
+          <ul>
+            <li>具備深化問題的思維</li>
+            <li>富有韌性、積極解決問題</li>
+            <li>面對挑戰冷靜思考</li>
+          </ul>
+        </div>
+        <div class="ab" data-k="4" tabindex="0">
+          <h3>實務參與執行經驗</h3>
+          <ul>
+            <li>數次完整的專案計畫與執行經驗，包含：學生宿舍自治委員會、系迎新、鹽夏不夜埕、國科會大專學生研究計畫</li>
+            <li>從實戰中進步並累積的經驗</li>
+          </ul>
+        </div>
+
+        <div class="radar" aria-hidden="true">
+          <svg viewBox="0 0 400 400" id="radar">
+            <polygon class="outer" id="outer"></polygon>
+            <g id="spokes"></g>
+            <polygon class="inner" id="inner"></polygon>
+            <text class="center-text" x="200" y="205">不怕挑戰</text>
+            <text class="center-text" x="200" y="245">無限進步</text>
+            <g id="dots"></g>
+          </svg>
+          <span class="radar-note">示意圖</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="band band-1"><div class="wrap"><p>大學兩年半間我就參與過......</p></div></div>
+  <h2 class="big-claim"><b>20+</b><span class="ci">次</span>從專案計畫到落地執行的經驗</h2>
+  <p class="claim-sub">以下介紹其中六項專案</p>
+  <div class="band band-2"></div>
+  <div class="wall rv" id="wall">
+    <img src="images/yanxia-ladder.jpg" width="720" height="1280" alt="2026 鹽夏不夜埕 在騎樓裝設作品" loading="lazy" data-zoom>
+    <img src="images/wall-08.jpg" width="1567" height="1045" alt="2025 紙箱遊具遊完小組測試" loading="lazy" data-zoom>
+    <img src="images/wall-07.jpg" width="1280" height="720" alt="2025 紙箱遊具公開測試" loading="lazy" data-zoom>
+    <img src="images/poster-team.jpg" width="1920" height="1280" alt="2024 人科114級畢業專題展 策展人員合照" loading="lazy" data-zoom>
+    <img src="images/dorm-book-group.jpg" width="1706" height="960" alt="2025 手作書工作坊 大合照" loading="lazy" data-zoom>
+    <img src="images/hero-interview.jpg" width="1600" height="1200" alt="2024 青旅聊天機器人 實際訪談研究" loading="lazy" data-zoom>
+    <img src="images/wall-01.jpg" width="1280" height="960" alt="2024 小番茄種植工作坊 活動大合照" loading="lazy" data-zoom>
+    <img src="images/wall-04.jpg" width="1600" height="899" alt="2025 人科學程系迎新 活動籌備人員合照（左上）" loading="lazy" data-zoom>
+    <img src="images/wall-02.jpg" width="960" height="1280" alt="2024 小番茄種植工作坊（右一）" loading="lazy" data-zoom>
+    <img src="images/wall-09.jpg" width="1200" height="1600" alt="以髮箍製成腳踏車頭戴式方向燈" loading="lazy" data-zoom>
+    <img src="images/yanxia-extra.jpg" width="1800" height="1200" alt="2026 鹽夏不夜埕 團隊合照" loading="lazy" data-zoom>
+    <img src="images/pallet-team.jpg" width="1706" height="960" alt="2025 木棧板遊具團隊合照" loading="lazy" data-zoom>
+    <img src="images/wall-06.jpg" width="1216" height="1473" alt="2025 科普列車高雄站 社群宣傳與經營" loading="lazy" data-zoom>
+    <img src="images/hero-kids.jpg" width="1280" height="720" alt="2025 街頭玩童 與孩童一起測試手作協力車" loading="lazy" data-zoom>
+    <img src="images/wall-05.jpg" width="1600" height="1064" alt="2025 大學之道生活營 小隊隊輔和籌備委員" loading="lazy" data-zoom>
+    <img src="images/wall-10.jpg" width="1600" height="1200" alt="以髮箍製成腳踏車頭戴式方向燈_供給共享腳踏車" loading="lazy" data-zoom>
+    <img src="images/wall-03.jpg" width="1600" height="900" alt="2025 人科學程系迎新 活動籌備人員" loading="lazy" data-zoom>
+  </div>
+  <hr class="line-end" style="margin-top:26px">
+
+  <div class="wrap">
+
+  <article class="project rv" id="p-dorm">
+    <div class="meta">
+      <span class="tag">#活動企劃撰寫與落地執行</span><span class="tag">#與各方資源對接</span><span class="tag">#將觀察場域轉化為想法</span>
+    </div>
+    <p class="date">2024.11-2025.10</p>
+    <h3 class="ptitle">中山大學 學生宿舍自治委員會 主任委員</h3>
+    <div class="lines">
+      <p>發現宿舍能參加的活動很少、公共區域器材年久失修</p>
+      <p class="ar"><span>任期內總共<span class="hl">策劃並舉辦 3 場+合辦 1 場活動</span>，增進住宿生福祉與能力</span></p>
+      <p class="ar" style="padding-left:0"><span style="margin-left:0">負責活動中大大小小的籌備（聯絡講師與校方、整理參與名單等）</span></p>
+    </div>
+    <div class="shots stack">
+      <div class="srow">
+        <figure class="shot" style="--ar:1.334"><img src="images/dorm-crossstitch.jpg" alt="宿舍十字繡工作坊" data-zoom><figcaption>宿舍十字繡工作坊</figcaption></figure>
+        <figure class="shot" style="--ar:0.75"><img src="images/dorm-firstaid.jpg" alt="壯闊台灣急救培訓" data-zoom><figcaption>壯闊台灣--急救培訓</figcaption></figure>
+        <figure class="shot" style="--ar:1.224"><img src="images/dorm-pingpong.jpg" alt="桌球歸還處" data-zoom><figcaption>更新公共空間器材的貼文</figcaption></figure>
+      </div>
+      <div class="srow">
+        <figure class="shot" style="--ar:1.777"><img src="images/dorm-bookmaking.jpg" alt="手作書工作坊" data-zoom><figcaption>手作書工作坊</figcaption></figure>
+        <figure class="shot" style="--ar:1.778"><img src="images/dorm-firstaid2.jpg" alt="急救培訓現場" data-zoom><figcaption>急救培訓現場</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="project rv" id="p-pallet">
+    <div class="meta">
+      <span class="tag">#設計思考專案經驗</span><span class="tag">#實地研究參與</span>
+      <a class="cta" href="https://www.notion.so/2025-34106ef9673f803eb5b3d17f5679aad5?source=copy_link" target="_blank" rel="noopener">⟶ 點我看詳情</a>
+    </div>
+    <p class="date">2025.9-2025.12</p>
+    <h3 class="ptitle">街頭玩童｜木棧板遊具實作</h3>
+    <p class="psub">打破傳統罐頭公園的設計</p>
+    <div class="lines">
+      <p>運用設計思考（e.g. POV 分析、人物誌、How might we、便利貼等）歸納出孩童對「互動性」、「協作性」與「自由探索」的高度需求，藉由廢棄的木棧板設計出可供同儕或親子協力、並能多功能載物的協力車，適合家庭、國小等場域，最後於週末時間到鹽埕區的馬雅各公園實際帶領親子共同遊玩。</p>
+    </div>
+    <div class="role">
+      <div class="role-h"><span class="chip">擔任角色</span>多功能規劃推手</div>
+      <ul>
+        <li>執行使用者訪談與田野調查，透過觀察與互動引導孩童表達實際需求</li>
+        <li>擔任專案整合與財務角色，使用 Notion 整理團隊觀察結果與經費運行狀況</li>
+        <li>使用 Autodesk Inventor 繪製設計草圖與 3D 模擬，並投入木工製作與組裝，確保設計具備實作可行性</li>
+      </ul>
+    </div>
+    <div class="shots stack">
+      <div class="srow">
+        <figure class="shot" style="--ar:1.778"><img src="images/pallet-interview-sheet.jpg" alt="訪談記錄整理單" data-zoom><figcaption>訪談記錄整理單</figcaption></figure>
+        <figure class="shot" style="--ar:0.562"><img src="images/pallet-woodwork.jpg" alt="木工工具操作" data-zoom><figcaption>木工工具操作</figcaption></figure>
+        <figure class="shot crop" style="--ar:0.68"><img src="images/pallet-cart.webp" alt="多功能協力車" data-zoom><figcaption>多功能協力車</figcaption></figure>
+      </div>
+      <div class="srow">
+        <figure class="shot" style="--ar:1.778"><img src="images/pallet-play.jpg" alt="木棧板協力車遊玩圖" data-zoom><figcaption>木棧板協力車遊玩圖</figcaption></figure>
+        <figure class="shot" style="--ar:1.777"><img src="images/pallet-team.jpg" alt="團隊在公園現場測試" data-zoom><figcaption>團隊在公園現場測試</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="project rv" id="p-yanxia">
+    <div class="meta">
+      <span class="tag">#完整的專案計畫到執行經驗</span><span class="tag">#解決問題</span>
+      <a class="cta" href="https://drive.google.com/file/d/1EZlhBHuUOeVomavKTdMnevbUtl08oxBS/view?usp=sharing" target="_blank" rel="noopener">⟶ 點我看詳情</a>
+    </div>
+    <p class="date">2026.2-2026.5</p>
+    <h3 class="ptitle">高雄市鹽埕區 科技藝術互動作品 《鹽夏不夜埕》</h3>
+    <p class="psub">邀請人們點亮舊街區</p>
+    <div class="lines">
+      <p>透過科技藝術作品展現鹽埕居民的特點，<span class="hl">讓更多人走入舊街區</span></p>
+    </div>
+    <div class="role">
+      <div class="role-h"><span class="chip">擔任角色</span>團隊決策 &amp; 手作人</div>
+      <ul>
+        <li>進行在地居民訪談，了解鹽埕舊街區居民的日常生活</li>
+        <li>擔任專案管理與團隊決策角色，設計 Notion 專案空間管理與紀錄狀況，幫助團隊分析困難並解決（例如取得經費與技術間的平衡）</li>
+        <li>實際組裝者之一，負責連接和檢查電線問題、製作木工支撐架、製作廢棄塑膠花</li>
+        <li>作品集彙整及美編：將團隊作品發展彙整為一份可視化的作品集（詳情可點右上方按鈕查看）</li>
+      </ul>
+    </div>
+    <div class="shots stack">
+      <div class="srow">
+        <figure class="shot" style="--ar:1.2"><img src="images/yanxia-notion.jpg" alt="Notion 專案管理頁面" data-zoom><figcaption>Notion 記錄每週進度&amp;作品測試</figcaption></figure>
+        <figure class="shot" style="--ar:1.5"><img src="images/yanxia-extra.jpg" alt="鹽夏不夜埕活動現場團隊合照" data-zoom><figcaption>鹽夏不夜埕團隊合照</figcaption></figure>
+      </div>
+      <div class="srow">
+        <figure class="shot" style="--ar:0.75"><img src="images/yanxia-install.jpg" alt="在騎樓裝設作品" data-zoom><figcaption>在騎樓裝設作品</figcaption></figure>
+        <figure class="shot" style="--ar:0.563"><img src="images/yanxia-wiring.jpg" alt="現場組裝電路" data-zoom><figcaption>現場組裝與測試電路</figcaption></figure>
+        <figure class="shot" style="--ar:0.75"><img src="images/yanxia-final.jpg" alt="作品最終展示" data-zoom><figcaption>作品最終展示圖</figcaption></figure>
+        <figure class="shot" style="--ar:0.707"><img src="images/yanxia-poster.jpg" alt="鹽夏不夜埕作品集" data-zoom><figcaption>由我彙整並美編的作品集</figcaption></figure>
+      </div>
+    </div>
+  </article>
+
+  <article class="project rv" id="p-egm">
+    <div class="meta">
+      <span class="tag">#獨自計畫並執行研究</span><span class="tag">#將設計研究方法結合日常經驗</span>
+    </div>
+    <p class="date">2026.7-</p>
+    <h3 class="ptitle">國科會大專學生研究計畫：<br>以EGM法分析成年人對歷史知識獲取管道之評價</h3>
+    <div class="lines">
+      <p>透過計畫想探究成年人離開課堂學習外，哪些歷史接觸管道是他們喜歡的</p>
+      <p class="ar"><span>藉由感性設計中的評價構造法 (EGM) 探討歷史接觸管道的魅力因子</span></p>
+      <p><span class="hl">具備獨自處理：撰寫研究計畫、訪談規劃與執行、聯絡受訪者等的能力</span></p>
+    </div>
+    <div class="shots egm">
+      <figure class="shot"><img src="images/egm-grant.png" alt="國科會計畫核定資料" data-zoom><figcaption>計畫通過 115 年度國家科學及技術委員會的大專學生研究計畫補助</figcaption></figure>
+      <figure class="shot"><img src="images/egm-plan.jpg" alt="研究規劃" data-zoom><figcaption>研究規劃（透過線上紀錄工具思考與規劃）</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="project rv" id="p-poster">
+    <div class="meta">
+      <span class="tag">#自學海報設計</span><span class="tag">#了解需求並以視覺化呈現</span>
+    </div>
+    <p class="date">2024.10-2024.12</p>
+    <h3 class="ptitle">人科學程 114 級畢業生專題成果展【流．域】</h3>
+    <div class="lines">
+      <p>藉由自學 Adobe Illustrator 以設計畢業專題展海報</p>
+      <p class="ar"><span>設計符合意象的主題視覺</span></p>
+    </div>
+    <div class="shots">
+      <figure class="shot"><img src="images/poster-team.jpg" alt="策展團隊合照" data-zoom><figcaption>114級 畢業專題展 策展團隊合照（右下）</figcaption></figure>
+      <figure class="shot"><img src="images/poster-main.jpg" alt="流域主海報" data-zoom><figcaption>114級 畢業專題展 主海報</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="project rv" id="p-workshop">
+    <div class="meta">
+      <span class="tag">#自行籌備共學工作坊</span><span class="tag">#與校外講師對接</span>
+    </div>
+    <p class="date">2025.2-2025.4</p>
+    <h3 class="ptitle">邀請校外講師在校園舉辦 Notion 學習工作坊</h3>
+    <div class="lines">
+      <p>邀請 YouTuber 薑餅資帶領中山的員生設計自己的數位時間管理工具</p>
+      <p class="ar"><span>負責邀請校外講師、工作坊事前籌備，當天活動參與人數 60+</span></p>
+    </div>
+    <div class="shots row">
+      <figure class="shot" style="--ar:1.334"><img src="images/notion-ws-day.jpg" alt="工作坊當天紀錄" data-zoom><figcaption>工作坊當天紀錄</figcaption></figure>
+      <figure class="shot" style="--ar:1.334"><img src="images/notion-ws-wide.jpg" alt="工作坊現場" data-zoom><figcaption>工作坊現場</figcaption></figure>
+      <figure class="shot" style="--ar:1.776"><img src="images/notion-ws-group.jpg" alt="工作坊大合照" data-zoom><figcaption>工作坊大合照</figcaption></figure>
+      <figure class="shot" style="--ar:0.707"><img src="images/notion-ws-poster.jpg" alt="工作坊宣傳海報" data-zoom><figcaption>工作坊宣傳海報</figcaption></figure>
+    </div>
+  </article>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner rv">
+    <h2>聯絡我</h2>
+    <p class="sub">感謝您的閱讀，期待有機會與您進一步交流。</p>
+    <div class="mail-line"><span class="lbl">E-MAIL</span><a class="addr" href="mailto:s1022026fion@gmail.com">s1022026fion@gmail.com</a></div>
+    <div class="btns">
+      <a class="btn primary" href="mailto:s1022026fion@gmail.com?subject=%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E5%9B%9E%E8%A6%86%E3%80%91%E6%96%B0%E7%B6%B5%E5%A9%95%EF%BD%9CTDRI%20%E5%AF%92%E5%81%87%E5%AF%A6%E7%BF%92">寄信給我 →</a>
+      <button class="btn" id="copyMail" type="button">複製 Email</button>
+    </div>
+    <p class="goal-end" style="margin-top:30px"><a href="#top">回到最上面 ↑</a></p>
+  </div>
+</section>
+</main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="放大圖片"><img alt=""><p></p></div>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* quick-nav bar */
+const topbar=document.getElementById('topbar');
+const navLinks=[...topbar.querySelectorAll('[data-nav]')];
+const bignav=document.querySelector('.steps');
+function onScroll(){
+  const y=window.scrollY;
+  topbar.classList.toggle('show', y > (bignav.offsetTop+bignav.offsetHeight-80));
+  let cur=null;
+  for(const id of ['goal','ability','projects','contact']){
+    const el=document.getElementById(id);
+    if(el.getBoundingClientRect().top<=window.innerHeight*0.4) cur=id;
+  }
+  navLinks.forEach(a=>a.classList.toggle('active',a.dataset.nav===cur));
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* lightbox */
+const lb=document.getElementById('lb'),lbImg=lb.querySelector('img'),lbCap=lb.querySelector('p');
+document.querySelectorAll('img[data-zoom]').forEach(im=>im.addEventListener('click',()=>{
+  lbImg.src=im.currentSrc||im.src;lbImg.alt=im.alt;
+  const cap=im.closest('figure')?.querySelector('figcaption');
+  lbCap.textContent=cap?cap.textContent:im.alt;lb.classList.add('open');
+}));
+lb.addEventListener('click',()=>lb.classList.remove('open'));
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+
+/* photo wall: fill the shortest column first so the bottom edge stays even */
+(function(){
+  const wall=document.getElementById('wall'); if(!wall) return;
+  const imgs=[...wall.querySelectorAll('img')];
+  function layout(){
+    const n=innerWidth<=560?2:innerWidth<=900?3:4;
+    if(wall.dataset.n==n) return; wall.dataset.n=n;
+    wall.classList.add('masonry'); wall.textContent='';
+    const cols=[...Array(n)].map(()=>{const c=document.createElement('div');c.className='mcol';wall.appendChild(c);return c});
+    const hs=Array(n).fill(0);
+    imgs.forEach(im=>{
+      const k=hs.indexOf(Math.min(...hs));
+      cols[k].appendChild(im);
+      hs[k]+= (+im.getAttribute('height'))/(+im.getAttribute('width')) + 0.03;
+    });
+  }
+  layout(); addEventListener('resize',layout);
+})();
+
+/* copy email */
+const cm=document.getElementById('copyMail');
+cm.addEventListener('click',async()=>{
+  const t='s1022026fion@gmail.com';
+  try{await navigator.clipboard.writeText(t)}catch(e){const i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove()}
+  cm.textContent='已複製 ✓';setTimeout(()=>cm.textContent='複製 Email',1800);
+});
+
+/* ability pentagon */
+(function(){
+  const cx=200,cy=215,R=165,k=5;
+  const lv=[0.93,0.98,0.94,0.92,0.97];           // 研究 / 溝通 / 美感 / 解決 / 實務
+  const pt=(i,r)=>{const a=(-90+i*72)*Math.PI/180;return[cx+r*Math.cos(a),cy+r*Math.sin(a)]};
+  const fmt=a=>a.map(p=>p.map(n=>n.toFixed(1)).join(',')).join(' ');
+  const outer=[...Array(k)].map((_,i)=>pt(i,R));
+  const inner=lv.map((v,i)=>pt(i,R*v));
+  document.getElementById('outer').setAttribute('points',fmt(outer));
+  const inn=document.getElementById('inner');inn.setAttribute('points',fmt(inner));
+  document.getElementById('spokes').innerHTML=outer.map(p=>`<line class="spoke" x1="${cx}" y1="${cy}" x2="${p[0]}" y2="${p[1]}"/>`).join('');
+  const dots=document.getElementById('dots');
+  dots.innerHTML=inner.map((p,i)=>`<circle class="dot" data-k="${i}" cx="${p[0]}" cy="${p[1]}"/>`).join('');
+  const items=[...document.querySelectorAll('.ab')],ds=[...dots.children];
+  function set(i){
+    items.forEach((el,j)=>el.classList.toggle('on',j===i));
+    ds.forEach((el,j)=>el.classList.toggle('on',j===i));
+    const f=lv.map((v,j)=>j===i?Math.min(1,v+0.05):v);
+    inn.setAttribute('points',fmt(f.map((v,j)=>pt(j,R*v))));
+    f.forEach((v,j)=>{const p=pt(j,R*v);ds[j].setAttribute('cx',p[0]);ds[j].setAttribute('cy',p[1])});
+  }
+  items.forEach(el=>{
+    const i=+el.dataset.k;
+    ['mouseenter','focus','click'].forEach(ev=>el.addEventListener(ev,()=>set(i)));
+    el.addEventListener('mouseleave',()=>set(-1));
+    el.addEventListener('blur',()=>set(-1));
+  });
+})();
+</script>
+</body>
+</html>

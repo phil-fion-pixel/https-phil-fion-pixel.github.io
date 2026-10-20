@@ -100,7 +100,6 @@ a{color:inherit}
 .line-end{border:0;border-top:4px solid var(--lime-line);margin:0}
 
 .project{padding:60px 0 44px;border-bottom:4px solid var(--lime-line)}
-.project:last-of-type{border-bottom:0}
 .meta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .tag{background:var(--sage);color:#fff;padding:6px 12px;font-weight:700;font-size:clamp(15px,1.7vw,24px);letter-spacing:.04em;line-height:1.4}
 .cta{margin-left:auto;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:clamp(15px,1.8vw,25px);padding:8px 20px;letter-spacing:.06em;transition:transform .2s,box-shadow .2s}
@@ -224,6 +223,17 @@ a{color:inherit}
 .btn{font:inherit;font-weight:700;font-size:clamp(16px,1.8vw,24px);letter-spacing:.08em;padding:12px 30px;border:3px solid var(--ink);cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s;color:var(--ink);background:var(--bg)}
 .btn.primary{background:var(--orange);color:#fff;border-color:var(--orange)}
 .btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.made{padding:clamp(40px,6vw,72px) 0 clamp(40px,5vw,64px);background:var(--bg)}
+.made h2{margin:0 0 6px;text-align:center;font-weight:700;font-size:clamp(16px,1.8vw,22px);letter-spacing:.14em;color:var(--ink-soft)}
+.made .sub{margin:0 0 28px;text-align:center;font-size:clamp(13px,1.3vw,16px);color:#aa9e96;letter-spacing:.06em}
+.made-steps{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(26px,4vw,56px);max-width:1000px}
+.made-steps li{position:relative;text-align:center;padding:0 6px}
+.made-steps li:not(:last-child)::after{content:"→";position:absolute;right:calc(clamp(26px,4vw,56px) / -2 - 10px);top:12px;font-size:22px;color:var(--sage-bar)}
+.made-steps .n{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--lime);color:var(--ink);font-weight:900;font-size:16px;margin-bottom:10px}
+.made-steps strong{display:block;font-size:clamp(16px,1.7vw,21px);letter-spacing:.06em;margin-bottom:4px}
+.made-steps em{display:block;font-style:normal;color:var(--orange);font-size:clamp(12px,1.2vw,14px);font-weight:700;letter-spacing:.1em;margin-bottom:8px}
+.made-steps span.d{display:block;font-size:clamp(13px,1.35vw,16px);line-height:1.75;color:var(--ink-soft)}
+@media (max-width:760px){.made-steps{grid-template-columns:1fr}.made-steps li:not(:last-child)::after{content:"↓";position:static;display:block;margin-top:10px;font-size:20px}}
 .goal-end{text-align:center;margin-top:50px;color:var(--ink-soft);font-size:15px;letter-spacing:.1em}
 .goal-end a{color:var(--orange);font-weight:700;text-decoration:none;border-bottom:2px solid var(--orange)}
 
@@ -559,6 +569,18 @@ a{color:inherit}
   </div>
 </section>
 
+<section class="made" id="made">
+  <div class="wrap rv">
+    <h2>這個網站是怎麼做出來的</h2>
+    <p class="sub">協作與製作方式</p>
+    <ol class="made-steps">
+      <li><span class="n">1</span><strong>Canva</strong><em>排版與內容（手作）</em><span class="d">我先在 Canva 親手完成版面設計與內容撰寫。</span></li>
+      <li><span class="n">2</span><strong>Claude Code</strong><em>製作成互動式網頁</em><span class="d">再與 Claude Code 協作，把 Canva 的設計製作成可互動的網頁。</span></li>
+      <li><span class="n">3</span><strong>GitHub</strong><em>公開網址</em><span class="d">最後透過 GitHub 上傳 HTML 檔案，成為可以被公開閱覽的網址。</span></li>
+    </ol>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="wrap contact-inner rv">
     <h2>聯絡我</h2>
@@ -638,7 +660,7 @@ cm.addEventListener('click',async()=>{
 /* ability pentagon */
 (function(){
   const cx=200,cy=215,R=165,k=5;
-  const lv=[0.93,0.98,0.94,0.92,0.97];           // 研究 / 溝通 / 美感 / 解決 / 實務
+  const lv=[0.80,0.96,0.74,0.90,0.99];           // 研究 / 溝通 / 美感 / 解決 / 實務
   const pt=(i,r)=>{const a=(-90+i*72)*Math.PI/180;return[cx+r*Math.cos(a),cy+r*Math.sin(a)]};
   const fmt=a=>a.map(p=>p.map(n=>n.toFixed(1)).join(',')).join(' ');
   const outer=[...Array(k)].map((_,i)=>pt(i,R));
